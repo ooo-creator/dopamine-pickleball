@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dopamine Pickleball | The Socialite Set</title>
+    <style>
+        :root { --tiffany-blue: #81D8D0; --neon-pink: #FF6EC7; --dark: #1A1A1A; }
+        body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #fff; color: var(--dark); overflow-x: hidden; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        /* Hero Section */
+        .hero { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
+        .hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.85); }
+        .hero-content { padding: 20px; }
+        .hero h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; font-weight: 300; opacity: 0.9; }
+
+        /* Value Prop (The Hook) */
+        .section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .text-block h2 { font-size: 2rem; border-left: 4px solid var(--tiffany-blue); padding-left: 15px; margin-bottom: 20px; }
+        .text-block p { line-height: 1.8; color: #555; }
+
+        /* Waitlist (Conversion) */
+        .cta-box { background: #f9f9f9; padding: 60px 20px; text-align: center; border-top: 1px solid #eee; }
+        .cta-box h3 { font-size: 2rem; margin-bottom: 30px; }
+        .waitlist-form { max-width: 400px; margin: 0 auto; }
+        input[type="email"] { width: 100%; padding: 15px; border: 1px solid #ddd; margin-bottom: 15px; font-size: 1rem; box-sizing: border-box; }
+        button { width: 100%; padding: 18px; background: var(--dark); color: #fff; border: none; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: 0.3s; }
+        button:hover { background: var(--neon-pink); }
+        .scarcity { margin-top: 20px; font-size: 0.9rem; color: var(--neon-pink); font-weight: 600; }
+
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .hero h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION (Target: Model Action) -->
+    <section class="hero">
+        <img src="https://sc01.alicdn.com/kf/H60616150fde544f7a9e0a229b0600beaF.png" class="hero-bg" alt="Elite Action">
+        <div class="hero-content">
+            <h1>The Elite Court Ritual</h1>
+            <p>Elevate your game with the limited Socialite Set.</p>
+        </div>
+    </section>
+
+    <!-- THE HOOK (Target: Product Box & Charm) -->
+    <section class="section">
+        <div class="grid">
+            <div class="text-block">
+                <h2>The Hollowed-Out Soul</h2>
+                <p>Featuring our signature hand-crafted Tiffany Blue charms and high-gloss neon pink leather. Every stitch is a statement of precision and elite style.</p>
+            </div>
+            <div>
+                <img src="https://sc01.alicdn.com/kf/Hec6a467582d849d7a76f0194904c2b314.png" alt="The Set">
+            </div>
+        </div>
+    </section>
+
+    <!-- THE TEXTURE (Target: Material Detail) -->
+    <section class="section" style="padding-top: 0;">
+        <div class="grid">
+            <div>
+                <img src="https://sc01.alicdn.com/kf/Hf134059aec4842b0bea7119254a640b2b.png" alt="Leather Texture">
+            </div>
+            <div class="text-block">
+                <h2>Precision-Fit Second Skin</h2>
+                <p>Designed for the bold. High-density polymer meet artisan texture. This isn't just a cover—it's a courtside masterpiece.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONVERSION ZONE -->
+    <section class="cta-box">
+        <h3>Reserve Your Allocation</h3>
+        <div class="waitlist-form">
+            <!-- Formspree Endpoint Placeholder (Replace YOUR_FORM_ID after signup) -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div style="margin-bottom: 25px; text-align: left;">
+                    <p style="font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; margin-bottom: 15px;">SELECT YOUR SIGNATURE STYLE:</p>
+                    <label style="display: block; margin-bottom: 12px; cursor: pointer; border: 1px solid #ddd; padding: 15px; border-radius: 4px;">
+                        <input type="radio" name="style" value="pink" checked> 
+                        <span style="margin-left: 10px; font-weight: 500;">The Socialite (Neon Pink x Tiffany Blue)</span>
+                        <div style="font-size: 0.8rem; color: #888; margin-top: 5px; margin-left: 25px;">Hand-crafted charm + High-gloss leather. $34.95</div>
+                    </label>
+                    <label style="display: block; opacity: 0.5; cursor: not-allowed; border: 1px solid #eee; padding: 15px; border-radius: 4px;">
+                        <input type="radio" name="style" value="classic" disabled> 
+                        <span style="margin-left: 10px;">Classic Elite (Coming Soon)</span>
+                        <div style="font-size: 0.8rem; color: #aaa; margin-top: 5px; margin-left: 25px;">Waitlist only for future drops.</div>
+                    </label>
+                </div>
+                <input type="email" name="email" placeholder="Enter your elite email address" required>
+                <button type="submit">Reserve My Socialite Set</button>
+                <p style="font-size: 0.7rem; color: #aaa; margin-top: 10px;">By joining, you agree to receive elite drop notifications. No spam, just precision.</p>
+            </form>
+            <p class="scarcity">Exclusive Drop: Limited to 50 sets globally. 04/15 Allocation Loading...</p>
+        </div>
+    </section>
+
+</body>
+</html>
